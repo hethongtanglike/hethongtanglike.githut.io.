@@ -1,56 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>TRang Đăng Kí</title>
+    <style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo Trang Login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      body {
+          background-image: url(https://kynguyenlamdep.com/wp-content/uploads/2020/04/ban-lam-viec.jpg ); /* The image used for background*/
+          background-repeat: no-repeat; /* Do not repeat the image */
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+      }
 
-</head>
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
 
-<body>
-    <section>
-        <!--Bắt Đầu Phần Hình Ảnh-->
-        <div class="img-bg">
-            <img src="https://kynguyenlamdep.com/wp-content/uploads/2020/04/ban-lam-viec.jpg"
-                alt="img">
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .link {
+        min-width: 50% !important;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 768px) {
+      .container {
+          max-width: 720px;
+        }
+
+      .link {
+          width: 100%;
+        }
+      }
+      @media (min-width: 576px) {
+      .container {
+          max-width: 540px;
+        }
+      }
+
+      .w3-purple, .w3-hover-purple:hover {
+        color: #fff!important;
+        background-color: rgba(156, 39, 176, 0.6) !important;
+      }
+
+    </style>
+  </head>
+
+  <body class="">
+    <!-- Content container -->
+    <div class="container">
+      <!-- Image and name container. Change to your picture here. -->
+      
+ <div class = "image container ">
+   <img src ="https://scr.vn/wp-content/uploads/2020/08/H%C3%ACnh-hot-girl-che-m%E1%BA%B7t.jpg"
+   
+   max-width="100%"
+   height="150px"
+    style="border-radius: 90%" 
+           
+        <div class="w3-text-white">
+          <p class="w3-text-white w3-large"> Xin Chào 
+          </p>
+     
+     <h>thông tin đăng kí </h>
+      <div class="" style="margin:5 -16px;">
+        <div class="w3-half">
+          <p>gmail</p>
+          
+          <input type="gmail" placeholder="nguyenvana123@gmail.com">
+        
+          <p>mật khẩu</p
+          >
+          <input type="password" name="password"placeholder="**********">
+          <p>
+          <input type="submit" value="Đăng Kí ">
+
+          </div>
+          <h3>đăng kí bằng mạng xã hội<h3>
+        
+
+        <!-- Links section 1. Replace the # inside of the "" with your links. -->
+        <div class="links-container">
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fa fa-code"></i>Blog</a>
         </div>
-        <!--Kết Thúc Phần Hình Ảnh-->
-        <!--Bắt Đầu Phần Nội Dung-->
-        <div class="noi-dung">
-            <div class="form">
-                <h2>Trang Đăng Kí </h2>
-                <form action="">
-                    <div class="input-form">
-                        <span>Tên Người Dùng</span>
-                        <input type="text" name="usename" placeholder="username" >
-                    </div>
-                    <div class="input-form">
-                        <span>Mật Khẩu</span>
-                        <input type="password" name="password"placeholder="**********">
-                    </div>
-                    <div class="input-form">
-                        <span>Nhập Lại Mật Khẩu </span>
-                        <input type="password" name="password"placeholder="**********">
-                    </div>
-                    </div>
-                   
-                    <div class="input-form">
-                        <input type="submit" value="Đăng Kí ">
-                    </div>
-                   
-                </form>
-               
-                </ul>
-            </div>
-        </div>
-        <!--Kết Thúc Phần Nội Dung-->
-    </section>
-</body>
+      </div>
+    </div>
 
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    
+      
+    <!-- End footer -->
+    </footer>
+
+  </body>
 </html>
